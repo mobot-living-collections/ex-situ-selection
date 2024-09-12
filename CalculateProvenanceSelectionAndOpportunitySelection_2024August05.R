@@ -145,7 +145,7 @@ k <- 10000 #null model iterations
 null.selection.coefficients <- matrix(NA, nrow=k, ncol=5) #matrix to store null selection coefficients
 colnames(null.selection.coefficients) <- sort(unique(Qa.prov.data$GeographicRegion))
 dim(null.selection.coefficients) #matrix dimensions should equal the result of running the next line of code 
-c(k,length(unique(Qa.prov.data$GeographicRegion))
+c(k,length(unique(Qa.prov.data$GeographicRegion)))
 head(null.selection.coefficients)
 
 #run null model
