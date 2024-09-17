@@ -41,25 +41,18 @@
 #############################################################################################
 
 #set working directory
-#setwd("S:/HortandResearchedSharedProjects/CommonGardenExperiments") #Gardenwide Shared Drive
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's laptop Lehmann
+
 accession.provenance <- read.table("ExpeditionDataALL_Static2023-06-21.txt", header = T, sep ="\t")
 dim(accession.provenance) 
 colnames(accession.provenance)
 str(accession.provenance)
 head(accession.provenance)
 
-#set working directory
-setwd("S:/HortandResearchedSharedProjects/CommonGardenExperiments") #Gardenwide Shared Drive
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's laptop Lehmann
 occurrence <- read.table("OccurrenceDatabaseSubset2023-06-21.txt", header = T, sep = "\t")
 dim(occurrence)
 str(occurrence)
 head(occurrence)
 
-#set working directory
-#setwd("S:/HortandResearchedSharedProjects/CommonGardenExperiments/QuercusArkansana/Data") #Gardenwide Shared Drive
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's laptop Lehmann
 Qa.sd <- read.table("QaSurDat_2024Jun21_122839.csv", header = T, sep = ",")
 dim(Qa.sd) 
 str(Qa.sd) 
@@ -100,8 +93,6 @@ Qa.accessions.coor <- Qa.provenance[match(Qa.accessions, Qa.provenance$Accession
 library(terra)
 
 #load state boundaries
-#setwd("S:/HortandResearchedSharedProjects/Attrition/RCode/StateShapes") #Gardenwide Shared Drive
-#setwd("C:/_transfer/SpatialData_General/GAD/gadm40_USA_shp") #Ivan's laptop
 States <- vect("gadm40_USA_1.shp")
 
 #examine range of geographic coordinates
@@ -109,7 +100,7 @@ range(Qa.occurrence$DDLongitud)
 range(Qa.occurrence$DDLatitude)
 
 #map 1: shows the whole range of the species
-windows(14,14)
+windows(14,14) #for windows machines only
 plot(States, xlim=c(-95, -81.5), ylim=c(30, 34.2), axes=F, box=T, mar=c(3.1,6,2.1,1))
 axis(1, line=-12.2, seq(-94, -82, 1), labels=F, cex.axis=2)
 axis(1, line=-12.2, seq(-94, -82, 2), labels=T, cex.axis=2)
@@ -262,10 +253,6 @@ text(-92.5, 33.7, "4", cex=1.5, col="#FFC107")
 text(-93.5, 34.1, "5", cex=1.5, col="#42FD7F")
 text(-89.5, 32, "8", cex=1.5, col="#E7A0FD")
 
-#directory to save figures
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Figures") #Ivan's directory
-
-
 #############################################################################################
 # 5. Save provenance data as a text file named "QaAccCoor.csv".
 #############################################################################################
@@ -279,9 +266,6 @@ dim(Qa.prov.data)
 str(Qa.prov.data)
 head(Qa.prov.data)
 
-#set working directory
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's directory
-#setwd("") #Lauren
 write.csv(Qa.prov.data, file=paste("QaAccCoor_", format(Sys.time(), "%Y%b%d_%H%M%S"), ".csv", sep=""), row.names = F)
 
 
