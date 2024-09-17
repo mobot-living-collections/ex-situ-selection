@@ -36,8 +36,6 @@
 #############################################################################################
 
 #set working directory
-#setwd("S:/HortandResearchedSharedProjects/CommonGardenExperiments") #Gardenwide Shared Drive
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's laptop Lehmann
 
 #read and examine survival data
 Qa.surv.data <- read.table("QaSurDat_2024Jun21_122839.csv", header = T, sep =",")
