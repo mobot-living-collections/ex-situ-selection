@@ -36,8 +36,6 @@
 #############################################################################################
 
 #set working directory
-#setwd("S:/HortandResearchedSharedProjects/CommonGardenExperiments") #Gardenwide Shared Drive
-#setwd("C:/_transfer/Papers/OpportunityForSelection/Data") #Ivan's laptop Lehmann
 
 #read and examine survival data
 Qa.surv.data <- read.table("QaSurDat_2024Jun21_122839.csv", header = T, sep =",")
@@ -129,13 +127,14 @@ str(mean.survival.rate.per.provenance)
 (mean.survival.rate.per.provenance["2"]/mean.survival.rate.per.provenance["2"]) - 1
 #region 3
 (mean.survival.rate.per.provenance["3"]/mean.survival.rate.per.provenance["2"]) - 1
-
-##########
-#[homework: write code to calculate the selection coefficients for the remaining regions]
-##########
+#region 4
+(mean.survival.rate.per.provenance["4"]/mean.survival.rate.per.provenance["2"]) - 1
+#region 5
+(mean.survival.rate.per.provenance["5"]/mean.survival.rate.per.provenance["2"]) - 1
+#region 8
+(mean.survival.rate.per.provenance["8"]/mean.survival.rate.per.provenance["2"]) - 1
 
 observed.selection.coefficients <- (mean.survival.rate.per.provenance/mean.survival.rate.per.provenance["2"]) - 1
-
 
 #############################################################################################
 # 2.2. Null distribution of selection coefficients for provenances (i.e., geographic regions).
@@ -170,14 +169,6 @@ summary(null.selection.coefficients)
 # 3. Relationship between the number of maternal lines and the selection coefficients
 #    across provenances (i.e., geographic regions).
 #############################################################################################
-
-##########
-#[homework: write code to graph the number of maternal lines per provenance in the horizontal
-#axis and the selection coefficients in the vertical axis. As we have discussed multiple times,
-#this graph is key for the manuscript, so you would ideally elaborate a graph that is good
-#enough for publication in Conservation Biology. You might want to look at examples of graphs
-#in the "Methods papers" published in Conservation Biology that you compiled. 
-##########
 
 #calculate median of null selection coefficients
 null.median.selection.coefficients <- apply(X=null.selection.coefficients, MARGIN=2, FUN=quantile, probs=0.5)
@@ -244,10 +235,12 @@ standard.deviation.survival.rate.per.provenance
 (standard.deviation.survival.rate.per.provenance["2"]/mean.survival.rate.per.provenance["2"])^2
 #region 3
 (standard.deviation.survival.rate.per.provenance["3"]/mean.survival.rate.per.provenance["3"])^2
-
-##########
-#[homework: write code to calculate opportunity for selection for the remaining regions]
-##########
+#region 3
+(standard.deviation.survival.rate.per.provenance["4"]/mean.survival.rate.per.provenance["4"])^2
+#region 3
+(standard.deviation.survival.rate.per.provenance["5"]/mean.survival.rate.per.provenance["5"])^2
+#region 3
+(standard.deviation.survival.rate.per.provenance["8"]/mean.survival.rate.per.provenance["8"])^2
 
 #############################################################################################
 # 4.2. Compare null and observed opportunity for selection for region 2.
