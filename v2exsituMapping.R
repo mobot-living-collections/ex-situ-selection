@@ -396,5 +396,8 @@ print(p5)
 ggsave("v2QAProvOverOccurrences_buffer_join_zoomed.png", dpi = 300)
 
 
-
+################ Oct 4, 2024 ##########################
+# note: Ivan uses these colors in other plot
+# "#D81B60", "#1E88E5", "#FFC107", "#42FD7F", "#E7A0FD" 
+#######################################################
 
