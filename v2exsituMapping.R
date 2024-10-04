@@ -223,7 +223,7 @@ ggsave("QAProvOverOccurrences_B_wBuffer.png", dpi = 300)
 # make occurrence points not filled
 # try to make transparency not stacked
 # remove gray grid background and replace with blank or ocean blue
-# make lat long axes the same intervals
+# make lat long axes more balanced
 # can there be a zoomed in map of the # of maternal lines to show concentrated of trees where they were collected?
 ##############################################################
 #Oct 3, 2024
@@ -317,8 +317,10 @@ print(p5)
 ggsave("v2QAProvOverOccurrences_zoomed.png", dpi = 300)
 
 ###########################################################################
-# add buffers but make them so the circle outlines don't overlap, they connect
 
+# add buffers but make them so the circle outlines don't overlap, they connect, by using st_union
+
+###########################################################################
 
 # Buffer the points (50 km buffer, transform to an appropriate projection for distance calculation)
 Qa.occurrence_buffer <- st_transform(Qa.occurrence_sf, crs = 3395) %>%  # Use a suitable projection for accurate distance
@@ -372,8 +374,8 @@ p4_with_pattern_buffers <- p4 +
   #have colors and different shapes corresponding to Regions
   geom_point(data = Qa.prov.data,
              aes(DDLongitude, DDLatitude,
-                 fill = factor(GeographicRegion),
-                 shape = factor(GeographicRegion)),
+                 fill = factor(GeographicRegion), #colors based on region
+                 shape = factor(GeographicRegion)), #shapes based on region
              color = "grey20",
              size = 2) +
   xlab("Longitude") +
@@ -389,6 +391,7 @@ ggsave("v2QAProvOverOccurrences_buffer_join.png", dpi = 300)
 #zoom in on provenances
 p5 <- p4_with_pattern_buffers + coord_sf(xlim = c(-95,-89),
                     ylim = c(30,35))
+#save the plot
 print(p5)
 ggsave("v2QAProvOverOccurrences_buffer_join_zoomed.png", dpi = 300)
 
