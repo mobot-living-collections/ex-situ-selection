@@ -235,11 +235,11 @@ standard.deviation.survival.rate.per.provenance
 (standard.deviation.survival.rate.per.provenance["2"]/mean.survival.rate.per.provenance["2"])^2
 #region 3
 (standard.deviation.survival.rate.per.provenance["3"]/mean.survival.rate.per.provenance["3"])^2
-#region 3
+#region 4
 (standard.deviation.survival.rate.per.provenance["4"]/mean.survival.rate.per.provenance["4"])^2
-#region 3
+#region 5
 (standard.deviation.survival.rate.per.provenance["5"]/mean.survival.rate.per.provenance["5"])^2
-#region 3
+#region 8
 (standard.deviation.survival.rate.per.provenance["8"]/mean.survival.rate.per.provenance["8"])^2
 
 #############################################################################################
@@ -478,4 +478,7 @@ sum(null.opportunity.for.selection.region5 <= observed.opportunity.for.selection
 #upper tail
 sum(null.opportunity.for.selection.region5 >= observed.opportunity.for.selection.region5)/length(null.opportunity.for.selection.region5)
 
+## COLOR OPTIONS ##
+# Ivan colors "#D81B60", "#1E88E5", "#FFC107", "#42FD7F", "#E7A0FD"
+# viridis colors "#440154FF" "#3B528BFF" "#21908CFF" "#5DC863FF" "#FDE725FF" or Option "D" if by factor function
 
