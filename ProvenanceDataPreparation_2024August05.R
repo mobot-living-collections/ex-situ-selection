@@ -100,7 +100,7 @@ range(Qa.occurrence$DDLongitud)
 range(Qa.occurrence$DDLatitude)
 
 #map 1: shows the whole range of the species
-windows(14,14) #for windows machines only
+#windows(14,14) #for windows machines only
 plot(States, xlim=c(-95, -81.5), ylim=c(30, 34.2), axes=F, box=T, mar=c(3.1,6,2.1,1))
 axis(1, line=-12.2, seq(-94, -82, 1), labels=F, cex.axis=2)
 axis(1, line=-12.2, seq(-94, -82, 2), labels=T, cex.axis=2)
@@ -113,7 +113,7 @@ points(Qa.accessions.coor$DDLongitude, Qa.accessions.coor$DDLatitude, type = "p"
 
 #map 2: focused on the western side of the range of the species, showing all collection localities
 #of the accessions in the commmon garden.
-windows(14,14)
+#windows(14,14)
 plot(States, xlim=c(-95, -89), ylim=c(30, 34.2), axes=F, box=T, mar=c(6,6,2.1,1))
 axis(1, line=0, seq(-95, -89, 1), labels=T, cex.axis=2)
 axis(2, line=-0.65, seq(30, 34, 1), cex.axis=2)
@@ -124,7 +124,7 @@ points(Qa.accessions.coor$DDLongitude, Qa.accessions.coor$DDLatitude, type = "p"
 
 #map 3: focused on the northwestern side of the range of the species, showing all collection localities
 #of the accessions in the commmon garden.
-windows(14,14)
+#windows(14,14)
 plot(States, xlim=c(-94.5, -89.2), ylim=c(31.5, 34.2), axes=F, box=T, mar=c(6,6,2.1,1))
 axis(1, line=-4.9, seq(-94, -90), labels=T, cex.axis=2)
 axis(2, line=0, seq(32, 34, 1), cex.axis=2)
@@ -197,7 +197,7 @@ geographic.region[Qa.accessions.coor$DDLongitude < -93.5 & Qa.accessions.coor$DD
 points(Qa.accessions.coor$DDLongitude[geographic.region==5], Qa.accessions.coor$DDLatitude[geographic.region==5], type = "p", pch = 21, col = "green", cex=3, lwd=2)
 
 #geographic region 8
-windows(14,14)
+#windows(14,14)
 plot(States, xlim=c(-94.5, -89.2), ylim=c(31.5, 34.2), axes=F, box=T, mar=c(6,6,2.1,1))
 axis(1, line=-4.9, seq(-94, -90), labels=T, cex.axis=2)
 axis(2, line=0, seq(32, 34, 1), cex.axis=2)
@@ -237,7 +237,7 @@ text(-93.5, 33.8, "5", cex=1.5, col="#42FD7F")
 text(-89.5, 31.8, "8", cex=1.5, col="#E7A0FD")
 
 #visualize the result using a map of the whole range of the species
-windows(14,14)
+#windows(14,14)
 plot(States, xlim=c(-95, -81.5), ylim=c(30, 34.2), axes=F, box=T, mar=c(3.1,6,2.1,1))
 axis(1, line=-12.2, seq(-94, -82, 1), labels=F, cex.axis=2)
 axis(1, line=-12.2, seq(-94, -82, 2), labels=T, cex.axis=2)
