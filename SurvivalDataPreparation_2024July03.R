@@ -35,8 +35,6 @@
 ## 1. Read and examine data files.
 ######################################################################################################
 
-#set working directory
-
 #read and examine survival data
 Qa.surv.data <- read.table(file="QaSurvivalData20230922.csv", header=TRUE, sep=",")
 class(Qa.surv.data)
@@ -141,8 +139,7 @@ deaths.per.accession
 barplot(deaths.per.accession, las=3)
 
 #graph the distribution of deaths among accessions,
-#this time ordering accessions according to decreasing number of plantings;
-#first use the function "order" to order accessions: 
+#this time ordering accessions according to decreasing number of plantings
 o.FrequencyPlantings <- order(table(Qa.sd$AccessionNumber), decreasing=T)
 #make sure the order of accessions is correct
 table(Qa.sd$AccessionNumber)[o.FrequencyPlantings]
