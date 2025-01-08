@@ -36,5 +36,5 @@ Illustration of the null model, representing demographic stochasticity, used to 
 
 # Q. arkansana provenance and occurrence map
 
-  * Map latitudes and longitudes obtained from GBIF data and collected provenance records.
+  * Map latitudes and longitudes obtained from GBIF data and collected provenance records. Plot created with ggplot2 https://cran.r-project.org/web/packages/ggplot2/index.html 
 
