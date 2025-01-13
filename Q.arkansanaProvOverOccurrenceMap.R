@@ -14,8 +14,8 @@
 ##
 ## DATA FILES REQUIRED
 ##
-## 1. [Latitude and longitude (i.e., provenance) data for collected accessions]
-## 2. [Latitude and longitude data for all occurrences of Quercus arkansana]
+## 1. "QaAccCoor_2024Jul24_104558.csv" [Latitude and longitude (i.e., provenance) data for collected accessions]
+## 2. "OccurrenceDatabaseSubset2023-06-21.txt" [Latitude and longitude data for all occurrences of Quercus arkansana]
 ##
 ## CONTENTS
 ##
