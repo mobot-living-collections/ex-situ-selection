@@ -16,8 +16,8 @@
 ##
 ## DATA FILES REQUIRED
 ##
-## 1. [Survival data]
-## 2. [Provenance data]
+## 1. "QaSurDat_2024Jun21_122839.csv" [Survival data]
+## 2. "QaAccCoor_2024Jul24_104558.csv" [Provenance data]
 ##
 ## CONTENTS
 ##
