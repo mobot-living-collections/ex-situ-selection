@@ -41,5 +41,17 @@ Survival data preparation
 # Q. arkansana provenance and occurrence map
 (Q.arkansanaProvOverOccurrenceMap.R)
 
-  * Map latitudes and longitudes obtained from GBIF data and collected provenance records. Plot created with ggplot2 https://cran.r-project.org/web/packages/ggplot2/index.html 
+  * Map latitudes and longitudes obtained from GBIF data and collected provenance records. Plot created with ggplot2 https://cran.r-project.org/web/packages/ggplot2/index.html
+
+# Appendix S1
+(SamplingVarianceOpportunitySelection_2025May27.R)
+
+  * Implements a simulation (described in detail in Appendix S1) that explores properties of the distribution of the variance in relative fitness among maternal lines sourced from region "r."
+
+(SamplingVarianceProvenanceSelection_2025May27.R)
+
+  * Implements two simulations (described in detail in Appendix S1) that explore properties of the distribution of mean survival rate of individual plants across maternal lines sourced from a given region "r" (Srt.hat)
+  * First simulation: effects of survival probability, initial number of plants per maternal line, and number of maternal lines on the mean and variance of Srt.hat
+  * Second simulation: effect of variation in the initial number of plants per maternal line on the variance of Srt.hat
+    
 
