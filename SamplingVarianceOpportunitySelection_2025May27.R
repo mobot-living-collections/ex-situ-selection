@@ -17,7 +17,7 @@
 ## properties of the distribution of the variance in relative fitness among maternal lines sourced
 ## from region "r", a quantity described in equation 3 of the main text and hereafter referred to
 ## as "Irt". The simulation explores how, under the null model for opportunity for selection, the
-## mean and variance of "Irt" are afected by survival probability, initial number of plants from
+## mean and variance of "Irt" are affected by survival probability, initial number of plants from
 ## region "r", the number of maternal lines and variation in the initial number of plants per
 ## maternal line.
 ##
