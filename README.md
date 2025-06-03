@@ -1,5 +1,5 @@
 # Summary
-R code associated with Martin et al.'s "Measuring demographic stochasticity and selection due to attrition in ex situ collections for plant conservation"
+R code associated with Sucher et al.'s "Measuring demographic stochasticity and selection due to attrition in ex situ collections for plant conservation"
 
 These scripts are part of a project on provenance selection and opportunity for selection in ex situ collections for plant conservation. The project uses as a study system a living collection of Quercus arkansana (Fagaceae) maintained in the Oertli Hardy Plant Nursery of the Missouri Botanical Garden.
 
