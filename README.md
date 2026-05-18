@@ -44,6 +44,8 @@ Survival data preparation
   * Map latitudes and longitudes obtained from GBIF data and collected provenance records. Plot created with ggplot2 https://cran.r-project.org/web/packages/ggplot2/index.html
 
 # Appendix S1
+Updated (May 18, 2026) simulation code for appendix S1 are DistributionOfMeanSurvivalRateUnderDemographicStochasticity_2026May15 and DistributionOfOpportunitySelectionUnderDemographicStochasticity_2026May15
+
 (SamplingVarianceOpportunitySelection_2025May27.R)
 
   * Implements a simulation (described in detail in Appendix S1) that explores properties of the distribution of the variance in relative fitness among maternal lines sourced from region "r."
