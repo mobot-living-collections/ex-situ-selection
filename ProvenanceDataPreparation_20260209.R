@@ -19,7 +19,7 @@
 ##
 ## 1. "ExpeditionDataALL_Static2023-06-21.txt" [Latitude and longitude (i.e., provenance) data for collected accessions]
 ## 2. "OccurrenceDatabaseSubset2023-06-21.txt" [Latitude and longitude data for all occurrences of Quercus arkansana]
-## 3. "QaSurDat_2024Jun21_122839.csv" [Survival data]
+## 3. "QaSurDat_2025Sep02_135300.csv" [Survival data]
 ## 4. "gadm40_USA_1.shp" [shape file with USA state boundaries]
 ##
 ## CONTENTS
